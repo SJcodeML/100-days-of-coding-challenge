@@ -1,16 +1,17 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Question 123: Create a loop that iterates through a string and stops when it finds the first vowel.
-let i = ["beijing", "shewuang", "urban", "Pakisan", "India"];
-const vowels = "aeiouAEIOU";
-for (let char of i) {
-    if (vowels.includes(char)) {
-        console.log(`First vowel found: ${char}`);
-        break;
+Object.defineProperty(exports, "__esModule", { value: true });
+// This function iterates through a string and logs each character until it finds a vowel
+function logUntilVowel(str) {
+    const vowels = "aeiouAEIOU";
+    for (const char of str) {
+        if (vowels.includes(char)) {
+            console.log(`First vowel found: ${char}`);
+            break; // Stops the loop at the first vowel found
+        }
+        console.log(char); // Logs each character until a vowel is encountered
     }
-    console.log(char);
 }
-// let favMovies:string[]=["documentary","destiny of the world","being a human"];
-// for (let movie of favMovies){
-//     console.log(movie);
-// }
+//   logUntilVowel("syzygy");
+logUntilVowel("rsthi"); // Logs 's', 'y', 'z', 'y', and then 'First vowel found: y'
+// Demonstrates iterating through a string and stopping at the first vowel.
