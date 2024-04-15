@@ -1,42 +1,8 @@
-
-
+"use strict";
 // Question 128: Create an arrow function that takes multiple parameters and returns the product of all parameters.
-
-
-const multiplyMultipleNum = (...numbers:number[]) => 
-    numbers.reduce((total, number) => total * number, 1);
-
-
-console.log(multiplyMultipleNum(3,4,6));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });
+const multiplyMultipleNum = (...numbers) => numbers.reduce((total, number) => total * number, 1);
+console.log(multiplyMultipleNum(3, 4, 6));
 // numbers.reduce((total, number) => total * number, 1): Inside the function, it uses the reduce method on the numbers array. 
 // This method iterates over each element of the array and accumulates a single result, in this case, the multiplication of all the numbers. 
 // The initial value of the accumulator is set to 1.The arrow function (total, number) => total * number passed to reduce takes two arguments: 

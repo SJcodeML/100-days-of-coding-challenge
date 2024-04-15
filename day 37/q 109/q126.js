@@ -8,6 +8,7 @@ let myObject = {
         const innerMethod = () => {
             console.log(this.property);
         };
+        innerMethod();
     },
 };
 myObject.outerMethod();
