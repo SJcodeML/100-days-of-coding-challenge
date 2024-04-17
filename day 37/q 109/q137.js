@@ -19,11 +19,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Overall, `try-catch` blocks are useful for handling errors in JavaScript code and preventing them from crashing the entire application. They allow you to gracefully handle exceptions and continue execution without interruption.
 // In summary, this line of code is used to intentionally generate an error with a specific message ("Something went wrong") 
 // at the point where it's executed. This can be useful for signaling exceptional conditions or handling unexpected situations in your code.
-// try {
-//     throw new Error("something went wrong")
-// }catch (error){
-//     console.log(error.message)
-// }
 // Demonstrates using a try-catch block to handle errors
 try {
     // Intentionally cause an error
